@@ -14,6 +14,7 @@ public class Printer {
     public void print(int numberOfPages, int copies){
         if((numberOfPages * copies) <= this.pages){
             this.pages = this.pages - (numberOfPages * copies);
+            this.toner = this.toner - (numberOfPages * copies);
         }
     }
 

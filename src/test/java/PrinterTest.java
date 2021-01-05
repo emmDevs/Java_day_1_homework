@@ -34,4 +34,16 @@ public class PrinterTest {
     public void getToner(){
         assertEquals(30, printer.getToner());
     }
+
+    @Test
+    public void tonerReducesWhenPrinting(){
+        printer.print(5, 2);
+        assertEquals(20, printer.getToner());
+    }
+
+    @Test
+    public void tonerStaysSameIfNoPrinting(){
+        printer.print(5,6);
+        assertEquals(30, printer.getToner());
+    }
 }

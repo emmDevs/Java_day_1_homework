@@ -7,4 +7,8 @@ public class Calculator {
     public int subtract(int numberOne, int numberTwo){
         return numberOne - numberTwo;
     }
+
+    public int multiply(int numberOne, int numberTwo){
+        return numberOne * numberTwo;
+    }
 }

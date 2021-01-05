@@ -1,8 +1,10 @@
 public class Printer {
     private int pages;
+    private int toner;
 
-    public Printer(int pages){
+    public Printer(int pages, int toner){
         this.pages = pages;
+        this.toner = toner;
     }
 
     public int getPages(){
@@ -13,5 +15,9 @@ public class Printer {
         if((numberOfPages * copies) <= this.pages){
             this.pages = this.pages - (numberOfPages * copies);
         }
+    }
+
+    public int getToner(){
+        return this.toner;
     }
 }

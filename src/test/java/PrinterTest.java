@@ -17,13 +17,16 @@ public class PrinterTest {
         assertEquals(25, printer.getPages());
     }
 
-//    @Test
-//    public void printEnoughPages(){
-//
-//    }
-//
-//    @Test
-//    public void printNotEnoughPages(){
-//
-//    }
+    @Test
+    public void printEnoughPages(){
+        printer.print(5, 2);
+        assertEquals(15, printer.getPages());
+
+    }
+
+    @Test
+    public void printNotEnoughPages(){
+        printer.print(5, 6);
+        assertEquals(25, printer.getPages());
+    }
 }
